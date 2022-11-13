@@ -1,0 +1,293 @@
+/*Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Courier New', Courier, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #CCCCCC;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40vh 40vh 40vh 40vh 40vh 20;
+    grid-template-areas: "home"
+        "viagens"
+        "novidades"
+        "quemSomos"
+        "contato"
+        "rodape"
+}
+
+/* Cabecalho */
+#menu {
+    background-color: #000E2D;
+    position: sticky;
+    top: 0px;
+    list-style-type: none;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.4rem;
+}
+
+#menu div a img {
+    height: 6rem;
+    width: auto;
+}
+
+ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 0;
+}
+
+ul a {
+    color: #F2AF2D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li {
+    font-size: 2rem;
+}
+
+#menu nav li a:hover {
+    color: #CCCCCC;
+}
+
+/* Titulos das Páginas */
+.titulos {
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: bold;
+    padding-top: 5rem;
+}
+
+/*Home*/
+#home {
+    background-image: url("../Imagens/espaço.jpg");
+    height: 92vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 2rem;
+}
+
+#home h3 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: left;
+    background-color: rgba(204, 204, 204, 0.4);
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    margin-right: 50%;
+    margin-top: 15rem;
+}
+
+#home div {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: justify;
+    background-color: rgba(204, 204, 204, 0.4);
+    padding: 1.5rem;
+    margin-right: 50%;
+}
+
+/*Viagens*/
+#viagens {
+    padding: 3rem 2rem;
+}
+
+#viagens .titulos {
+    color: #000E2D;
+    margin-bottom: 2rem;
+}
+
+#viagens h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 0.3rem;
+    color: #000E2D
+}
+
+.viagemItem {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.imgPlaneta {
+    display: inline-block;
+}
+
+.imgPlaneta img {
+    width: 45vh;
+    height: 35vh;
+}
+
+.boxPlaneta {
+    width: 45vh;
+    height: 35vh;
+    background-color: #AFCCDA;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.boxPlaneta h4 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5rem 0rem 1rem 0rem;
+    color: #000E2D
+}
+
+.boxPlaneta p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: justify;
+    color: #000E2D;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+/*Novidades*/
+#novidades {
+    background-image: url("../Imagens/novidades.jpg");
+    height: 92vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 2rem;
+}
+
+#novidades h3 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: left;
+    background-color: rgba(204, 204, 204, 0.4);
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    margin-right: 50%;
+    margin-top: 15rem;
+}
+
+#novidades div {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: justify;
+    background-color: rgba(204, 204, 204, 0.4);
+    padding: 1.5rem;
+    margin-right: 50%;
+}
+
+#novidades p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: justify;
+    background-color: #F2AF2D;
+    padding: 1.5rem;
+    margin-right: 50%;
+}
+
+/*Quem Somos*/
+#quemSomos{
+    padding: 3rem 2rem;
+}
+#quemSomos .titulos {
+    color: #000E2D;
+}
+
+.quemSomosImagem {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+}
+
+.quemSomosTexto {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1.5rem;
+}
+
+.imgPessoa img {
+    width: 17vh;
+    display: inline-block;
+}
+
+.boxPessoa {
+    width: 20vh;
+    height: 20vh;
+    background-color: #F2AF2D;
+    padding-top: 0rem;
+    display: inline-block;
+}
+
+.boxPessoa p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000E2D;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+/*Contato*/
+#contato{
+    padding: 3rem 2rem;
+}
+.contatoInfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#mapa {
+    padding: 20px 0px 50px 20px;
+    width: 35%;
+}
+
+#boxContato {
+    width: 31%;
+    height: 320px;
+    padding: 25px 0px 50px 0px;
+}
+
+#contato1 {
+    font-size: 1.5rem;
+    padding: 0px 0px 50px 20px;
+}
+
+/*Rodapé*/
+#rodape {
+    background-color: #000E2D;
+    text-align: left;
+    padding: 0.5rem 1rem 2rem 2rem;
+}
+
+#rodape p {
+    color: aliceblue;
+    line-height: 2;
+    font-weight: normal;
+    font-size: 120%;
+}
+
+#rodape p a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
