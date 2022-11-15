@@ -142,7 +142,8 @@ li {
 .boxPlaneta {
     width: 45vh;
     height: 35vh;
-    background-color: #AFCCDA;
+    /* background-color: #AFCCDA; */
+    background-image: linear-gradient(to bottom,#AFCCDA,#e0e0e0);
     display: inline-block;
     vertical-align: top;
 }
