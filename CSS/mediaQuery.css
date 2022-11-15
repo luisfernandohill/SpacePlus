@@ -264,6 +264,9 @@ até 600px: Mobile devices.
         padding: 1.5rem;
         margin-right: 30%;
     }
+    #novidades p:hover{
+        margin-right: 78%;
+    }
 
     /*Quem Somos*/
     #quemSomos{
