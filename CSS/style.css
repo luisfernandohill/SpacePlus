@@ -203,6 +203,10 @@ li {
     background-color: #F2AF2D;
     padding: 1.5rem;
     margin-right: 50%;
+    transition: margin-right 1s;
+}
+#novidades p:hover{
+    margin-right: 65%;
 }
 
 /*Quem Somos*/
