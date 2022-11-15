@@ -240,6 +240,11 @@ li {
     background-color: #F2AF2D;
     padding-top: 0rem;
     display: inline-block;
+    transition: 1s;
+}
+
+.boxPessoa:hover {
+    background-color: #000E2D;
 }
 
 .boxPessoa p {
@@ -248,7 +253,13 @@ li {
     text-align: center;
     color: #000E2D;
     padding: 1rem 1rem 0rem 1rem;
+    transition: 1s;
 }
+
+.boxPessoa p:hover {
+    color: #ffffff;
+}
+
 
 /*Contato*/
 #contato{
